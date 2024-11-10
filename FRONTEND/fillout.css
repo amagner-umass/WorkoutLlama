@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF; /* Corrected the background color */
+  color: #6c534d;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-container img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Block styling */
+.block {
+  font-family: 'Poppins', sans-serif; /* Consistent Poppins font for block */
+  background-color: #f7d6d6; /* Light pink background for each block */
+  color: #6c534d;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: left;
+}
+
+.block label {
+  font-family: 'Poppins', sans-serif; /* Consistent Poppins font */
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.block select, 
+.block input[type="number"],
+.block input[type="text"] {
+  font-family: 'Poppins', sans-serif; /* Consistent Poppins font */
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fbf2f1; /* Updated dropdown and input background color */
+}
+
+/* Button styling */
+button {
+  font-family: 'Poppins', sans-serif; /* Poppins font for button */
+  background-color: #dcacac;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #cfa6a6; /* Darker shade for hover */
+}
+
+/* Image container styling */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 15%; /* Adjust width as desired */
+    border-radius: 8px; /* Optional rounded corners */
+}
+.subbutton {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ebc3bb; /* Coral color */
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease;
+}
+
+.subbutton:hover {
+    background-color: #d3b4b0; /* Slightly darker shade on hover */
+}
+
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #777;
+}
