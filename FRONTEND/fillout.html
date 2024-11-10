@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Llama</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fillout.css">
+    <style>
+        /* Make sure all text uses the Poppins font */
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFFFFF; /* Light cream background */
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #FFFF; /* Soft pink background */
+            color: #fff;
+        }
+
+        .header-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #d3b4b0; /* Cute coral color */
+        }
+
+        .block {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fbf3f1; /* Light pink for blocks */
+            border: 1px solid #ebc3bb;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        .block label {
+            font-size: 1.1em;
+            color: #dcacac;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .block select, 
+        .block input[type="number"],
+        .block input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            border: 2px solid #dcacac;
+            border-radius: 10px;
+            background-color: #fef8f6; /* Very light pink */
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .block select:focus, 
+        .block input[type="number"]:focus, 
+        .block input[type="text"]:focus {
+            border-color: #ebc3bb;
+            background-color: #ebc3bb; /* A warmer light color on focus */
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 20px;
+            background-color: #ebc3bb; /* Coral button */
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d3b4b0; /* Slightly darker shade for hover */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="https://i.imgur.com/XyuTGCw.png" alt="workout llama">
+        </div>
+    </header>
+
+    <section id="workout-form">
+        <h2>Enter Your Following Workout Goals</h2>
+        
+        <div class="block">
+            <label for="experience">Experience Level:</label>
+            <select id="experience" name="experience">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div class="block">
+            <label for="goals">Your Goals:</label>
+            <select id="goals" name="goals">
+                <option value="strength">Strength</option>
+                <option value="weight_loss">Weight Loss</option>
+                <option value="muscle_gain">Muscle Gain</option>
+                <option value="endurance">Endurance</option>
+            </select>
+        </div>
+
+        <div class="block">
+            <label for="time">Time Availability per Week (hours):</label>
+            <input type="number" id="time" name="time" min="1" max="40">
+        </div>
+
+        <div class="block">
+            <label for="workouts">Workouts per Week:</label>
+            <input type="number" id="workouts" name="workouts" min="1" max="7" required>
+        </div>
+
+        <div class="block">
+            <label for="time-per-workout">Time per Workout (minutes):</label>
+            <input type="number" id="time-per-workout" name="time-per-workout" min="15" max="120" required>
+        </div>
+
+        <div class="block">
+            <label for="availability">Preferred Workout Days:</label>
+            <input type="text" id="availability" name="availability" placeholder="e.g., Mon, Wed, Fri" required>
+        </div>
+        <a href="dashboard.html" class="subbutton">Submit</a>
+      
+    </section>
+  
+
+</body>
+</html>
