@@ -1,0 +1,111 @@
+/* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Mulish"> */
+
+  /* General Reset for Margin and Padding */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Ensuring the HTML and body take full height */
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    background-color: #ebc3bb;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Full screen height */
+  }
+
+  /* Title Styling */
+  h1 {
+    margin-bottom: 5%; /* Reduced margin to avoid excess space */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #dcacac;
+    letter-spacing: 0.1em;
+  }
+
+  /* Paragraph styling with background span */
+  p {
+    margin-top: 3%;  /* Adjusted margin for better spacing */
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 1.5em;
+  }
+
+  p span {
+    background: #fff;
+    padding: 0 10px;
+  }
+
+  /* Input and Button Styles */
+  input, button {
+    padding: 15px;  /* Increased padding for better click area */
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-bottom: 15px; /* Space between inputs */
+  }
+
+  /* Specific Input Padding Fix */
+  input:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* Container with fade-in effect */
+  .login-container {
+    background-color: white;
+    padding: 7%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30vw; /* Make the container skinnier (30% of the viewport width) */
+    max-width: 400px; /* Optional: limit max width */
+    margin: auto; /* Center horizontally */
+    height: auto; /* Remove fixed height for better content fitting */
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+  }
+
+  /* Button Styles */
+  #submit, #create-acct-btn {
+    background-color: #dcacac;
+    color: white;
+    border: none;
+    margin-top: 20px; /* Space for separation */
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Hover and Active States */
+  button:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Style for links/buttons */
+  #return-btn {
+    cursor: pointer;
+    background: none;
+    color: grey;
+    text-decoration: underline;
+    border: none;
+    margin-top: 3%;
+  }
