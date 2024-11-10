@@ -1,0 +1,111 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    background-color: #fff;
+    color: #6c534d;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: #fbf2f1;
+    color: #6c534d;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Header title */
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Log Out Button (top-right) */
+.logout {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #dcacac;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #dcacac;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    background-color: #f2b1ae;
+}
+
+/* Weekly Schedule Section */
+#weekly-schedule {
+    margin-top: 20px;
+}
+
+#weekly-schedule h2 {
+    font-size: 1.5em;
+    color: #dcacac;
+    margin-bottom: 20px;
+}
+
+/* Day Block styling */
+.day-schedule {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.day-block {
+    background-color: #fbf2f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.day-block h3 {
+    color: #6c534d;
+    margin-bottom: 10px;
+}
+
+.workout-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.workout-block label {
+    font-size: 1.1em;
+    color: #6c534d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.workout-block input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #dcacac;
+}
+.header-image {
+    width: 30%;            /* Shrinks the image to 30% of its container */
+    max-width: 120px;      /* Ensures the image won't exceed 120px */
+    height: auto;          /* Maintains the original aspect ratio */
+    margin: 10px auto;     /* Adds top margin and centers horizontally */
+    border-radius: 8px;    /* Optional: Rounds the corners */
+    display: block;        /* Centers the image in its container */
+}
+
