@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Workout Dashboard</title>
+
+    <!-- Link to Google Fonts for Poppins font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', serif;
+            background-color: #fff;
+            color: #6c534d;
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #fbf2f1;
+            color: #6c534d;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Header title */
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Log Out Button (top-right) */
+        .logout {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: #6c534d;
+            font-size: 1em;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #dcacac;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .logout:hover {
+            background-color: #f2b1ae;
+        }
+
+        /* Image styling */
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        /* Weekly Schedule Section */
+        #weekly-schedule {
+            margin-top: 20px;
+        }
+
+        #weekly-schedule h2 {
+            font-size: 1.5em;
+            color: #dcacac;
+            margin-bottom: 20px;
+        }
+
+        /* Day Block styling */
+        .day-schedule {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .day-block {
+            background-color: #fbf2f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        .day-block h3 {
+            color: #6c534d;
+            margin-bottom: 10px;
+        }
+
+        .workout-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .workout-block label {
+            font-size: 1.1em;
+            color: #6c534d;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .workout-block input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            accent-color: #dcacac;
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Reset Preferences Button */
+        .reset-preferences {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fbf2f1;
+            border-radius: 5px;
+            border-color: #fbf2f1;
+            color: #dcacac;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .reset-preferences:hover {
+            background-color: #;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Your personalized workout schedule</h1>
+            <!-- Log Out Option -->
+            <a href="index.html" class="logout">Log Out</a>
+        </div>
+    </header>
+
+    <!-- Image directly under header -->
+    <img src="https://i.imgur.com/9VpukEs.jpeg" alt="Workout Schedule Banner" class="header-image">
+
+    <!-- Weekly Schedule Section -->
+    <section id="weekly-schedule">
+        <!-- Days of the week with workouts -->
+        <div class="day-schedule">
+            <!-- Monday Block -->
+            <div class="day-block">
+                <h3>Monday</h3>
+                <div class="workout-block">
+                    <label><input type="checkbox" name="monday-warmup"> </label>
+                    <label><input type="checkbox" name="monday-cardio"> Cardio (20 mins)</label>
+                    <label><input type="checkbox" name="monday-strength"> Strength Training (30 mins)</label>
+                </div>
+            </div>
+
+            <!-- Tuesday Block -->
+            <div class="day-block">
+                <h3>Tuesday</h3>
+                <div class="workout-block">
+                    <label><input type="checkbox" name="tuesday-warmup"> Warm-Up (10 mins)</label>
+                    <label><input type="checkbox" name="tuesday-cardio"> Cardio (20 mins)</label>
+                    <label><input type="checkbox" name="tuesday-strength"> Strength Training (30 mins)</label>
+                    <label><input type="checkbox" name="tuesday-yoga"> Yoga (15 mins)</label>
+                    <label><input type="checkbox" name="tuesday-cooldown"> Cool Down (5 mins)</label>
+                </div>
+            </div>
+            <div class="day-block">
+                <h3>Wednesday</h3>
+                <div class="workout-block">
+                    <label><input type="checkbox" name="tuesday-warmup"> Warm-Up (10 mins)</label>
+                    <label><input type="checkbox" name="tuesday-cardio"> Cardio (20 mins)</label>
+                </div>
+            </div>
+            <div class="day-block">
+                <h3>Thursday</h3>
+                <div class="workout-block">
+                    <label><input type="checkbox" name="tuesday-warmup"> Warm-Up (10 mins)</label>
+                    <label><input type="checkbox" name="tuesday-cardio"> Cardio (20 mins)</label>
+                </div>
+            </div>
+          <div class="day-block">
+                <h3>Friday</h3>
+                <div class="workout-block">
+                    <label><input type="checkbox" name="tuesday-warmup"> Warm-Up (10 mins)</label>
+                    <label><input type="checkbox" name="tuesday-cardio"> Cardio (20 mins)</label>
+                </div>
+            </div>
+           <div class="day-block">
+                <h3>Saturday</h3>
+                <div class="workout-block">
+                    <label><input type="checkbox" name="tuesday-warmup"> Warm-Up (10 mins)</label>
+                    <label><input type="checkbox" name="tuesday-cardio"> Cardio (20 mins)</label>
+                </div>
+            </div>
+          <div class="day-block">
+                <h3>Sunday</h3>
+                <div class="workout-block">
+                    <label><input type="checkbox" name="tuesday-warmup"> Warm-Up (10 mins)</label>
+                </div>
+            </div>
+            <!-- Additional day blocks for Wednesday through Sunday -->
+            <!-- Add more content here as needed -->
+        </div>
+
+        <!-- Reset Preferences Button -->
+        <button class="reset-preferences" onclick="resetPreferences()">Reset Week</button>
+    </section>
+
+    <script>
+        // Function to reset all checkbox preferences
+        function resetPreferences() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        }
+    </script>
+
+</body>
+</html>
