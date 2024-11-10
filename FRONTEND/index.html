@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Llama</title>
+    <style>
+      /* Set the background image for the entire body */
+      body {
+        background-image: url("https://i.imgur.com/BcrAx3D.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Full screen height */
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Horizontally center the content */
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Content wrapper to hold the buttons side by side */
+      .content {
+        display: flex; /* Align items in a row (side by side) */
+        justify-content: space-between; /* Space between buttons */
+        gap: 30px; /* Gap between buttons */
+        position: absolute;
+        top: 74%; /* Adjust this value to change the vertical position of the buttons */
+        left: 50%; /* Horizontally center the content */
+        transform: translateX(-50%); /* Adjust for proper centering */
+      }
+
+      /* Button Styling */
+      .aesthetic-btn, .aesthetic-btn-2 {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #dcafa4, #ffff);
+        color: white;
+        border: 0px solid transparent;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        text-align: center;
+        text-decoration: none;
+        display: flex; /* Flexbox for button content */
+        justify-content: center;
+        align-items: center;
+        height: 35px; /* Set fixed height for both buttons */
+        width: 150px; /* Set width to maintain consistent button size */
+        opacity: 0; /* Start invisible */
+        animation: fade-in 1.5s forwards; /* Fade-in animation */
+      }
+
+      /* Hover Effect */
+      .aesthetic-btn:hover, .aesthetic-btn-2:hover {
+        transform: translateY(-7%);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Active (clicked) Effect */
+      .aesthetic-btn:active, .aesthetic-btn-2:active {
+        transform: translateY(-18%);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Fade-in animation */
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <!-- Anchor link styled as the first button -->
+      <a href="register.html" class="aesthetic-btn">Register</a>
+      <!-- Second button link -->
+      <a href="login.html" class="aesthetic-btn-2">Sign In</a>
+    </div>
+  </body>
+</html>
